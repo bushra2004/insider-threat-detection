@@ -1,21 +1,19 @@
 # dashboard/enterprise_dashboard.py - ENHANCED VERSION WITH REPORT GENERATION
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-import time
 import json
 import os
-import re
 import hashlib
-from typing import Dict, List, Optional
-import io
 import base64
 import warnings
-import sys
 import tempfile
+import time
+import threading
 
 warnings.filterwarnings('ignore')
 
@@ -212,8 +210,258 @@ st.markdown("""
     .stProgress > div > div > div > div {
         background: linear-gradient(90deg, #00ff41 0%, #008f11 100%);
     }
+    
+    /* Custom status bar */
+    .status-bar {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 255, 65, 0.2);
+        margin: 10px 0;
+    }
+    
+    .status-item {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    /* Logo container */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .circular-logo {
+        background: linear-gradient(135deg, rgba(0, 255, 65, 0.2) 0%, rgba(0, 255, 65, 0.1) 100%);
+        padding: 8px;
+        border-radius: 50%;
+        border: 2px solid #00ff41;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    
+    .circular-logo img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid #00ff41;
+    }
 </style>
 """, unsafe_allow_html=True)
+
+# ============================================
+# LOGO LOADING FUNCTION
+# ============================================
+
+def load_logo():
+    """Load logo image and convert to base64"""
+    import os
+    
+    # Get the directory where THIS Python file is located
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(current_dir, "logo.jpeg")
+    
+    if os.path.exists(logo_path):
+        try:
+            with open(logo_path, "rb") as img_file:
+                return base64.b64encode(img_file.read()).decode()
+        except:
+            return None
+    return None
+
+# Load logo once and store in session state
+if 'logo_base64' not in st.session_state:
+    st.session_state.logo_base64 = load_logo()
+
+# ============================================
+# EMAIL ALERT CONFIGURATION
+# ============================================
+
+EMAIL_CONFIG = {
+    "enabled": True,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "bushrafatima.vtu@gmail.com",
+    "smtp_password": "zloe ckpa ctba dtij",
+    "sender_email": "alerts@insiderguard.com",
+    "sender_name": "INSIDER GUARD Alert System",
+    "recipients": ["bushrafatima.vtu@gmail.com"],
+    "send_immediate_alerts": True,
+    "send_daily_digest": True,
+    "send_weekly_report": False,
+    "alert_levels": ["Critical", "High"],
+    "last_sent": None,
+    "alert_check_interval": 30,  # Check every 30 seconds
+    "last_checked": None
+}
+
+# ============================================
+# AUTO ALERT SYSTEM (BACKGROUND THREAD)
+# ============================================
+
+class AutoAlertSystem:
+    """Background thread for automatic email alerts"""
+    
+    def __init__(self):
+        self.running = False
+        self.thread = None
+        
+    def start(self):
+        """Start the auto-alert system"""
+        if not EMAIL_CONFIG["enabled"]:
+            st.warning("Email alerts are disabled. Enable them in EMAIL_CONFIG.")
+            return
+            
+        if not self.running:
+            self.running = True
+            self.thread = threading.Thread(target=self._monitor_threats, daemon=True)
+            self.thread.start()
+            print("🚨 Auto-alert system started!")
+            
+    def stop(self):
+        """Stop the auto-alert system"""
+        self.running = False
+        if self.thread:
+            self.thread.join(timeout=1)
+        print("Auto-alert system stopped")
+    
+    def _monitor_threats(self):
+        """Monitor threats in background thread"""
+        while self.running:
+            try:
+                self._check_and_send_alerts()
+                time.sleep(EMAIL_CONFIG["alert_check_interval"])  # Check every 30 seconds
+            except Exception as e:
+                print(f"Auto-alert error: {str(e)}")
+                time.sleep(60)  # Wait 60 seconds on error
+    
+    def _check_and_send_alerts(self):
+        """Check for critical threats and send alerts"""
+        if not EMAIL_CONFIG["enabled"] or not EMAIL_CONFIG["send_immediate_alerts"]:
+            return
+        
+        try:
+            # Check if we have threat data
+            if 'threat_data' not in st.session_state or st.session_state.threat_data is None:
+                return
+            
+            df = st.session_state.threat_data
+            
+            # Check for critical threats in last 15 minutes
+            if 'timestamp' in df.columns:
+                df['timestamp_dt'] = pd.to_datetime(df['timestamp'])
+                cutoff_time = datetime.now() - timedelta(minutes=15)
+                recent_threats = df[df['timestamp_dt'] >= cutoff_time]
+                
+                critical_threats = recent_threats[recent_threats['severity'] == 'Critical']
+                
+                # If critical threats found, send alert
+                if len(critical_threats) > 0:
+                    # Check if we already sent alert recently (cooldown)
+                    if EMAIL_CONFIG.get("last_sent"):
+                        last_sent = pd.to_datetime(EMAIL_CONFIG["last_sent"])
+                        time_diff = (datetime.now() - last_sent).total_seconds()
+                        if time_diff < 300:  # 5 minute cooldown
+                            return
+                    
+                    # Send alert
+                    result = self._send_critical_alert(critical_threats)
+                    if result and result.get("success"):
+                        print(f"✅ Sent alert for {len(critical_threats)} critical threats")
+                    else:
+                        print(f"❌ Failed to send alert: {result.get('message', 'Unknown error')}")
+            
+        except Exception as e:
+            print(f"Alert check error: {str(e)}")
+    
+    def _send_critical_alert(self, threats_df):
+        """Send critical alert email"""
+        try:
+            critical_count = len(threats_df)
+            
+            # Get most recent threats for the email
+            recent_threats = threats_df.sort_values('timestamp', ascending=False).head(5)
+            
+            # Generate email
+            subject = f"CRITICAL ALERT: {critical_count} Critical Threat(s) Detected"
+            body = self._generate_alert_email_body(recent_threats, critical_count)
+            
+            # Send email
+            result = send_email_alert(subject, body)
+            
+            # Update last sent time
+            if result.get("success"):
+                EMAIL_CONFIG["last_sent"] = datetime.now().isoformat()
+            
+            return result
+            
+        except Exception as e:
+            return {"success": False, "message": f"Alert generation failed: {str(e)}"}
+    
+    def _generate_alert_email_body(self, threats_df, total_count):
+        """Generate HTML email body for critical alerts"""
+        # Summary section
+        body = f"""
+        <div class="alert-box">
+            <h2>🚨 CRITICAL ALERT</h2>
+            <p><strong>Generated:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+            <p><strong>Total Critical Threats:</strong> <span class="critical">{total_count}</span></p>
+        </div>
+        """
+        
+        # Top threats table
+        if len(threats_df) > 0:
+            body += "<h3>📋 Critical Threat Activity:</h3>"
+            body += "<table class='threat-table'>"
+            body += "<tr><th>Time</th><th>User</th><th>Action</th><th>Severity</th><th>Risk</th><th>Department</th></tr>"
+            
+            for _, threat in threats_df.iterrows():
+                severity_class = threat['severity'].lower()
+                username = threat['user'].split('@')[0] if '@' in threat['user'] else threat['user']
+                
+                body += f"""
+                <tr>
+                    <td>{pd.to_datetime(threat['timestamp']).strftime('%H:%M')}</td>
+                    <td>{username}</td>
+                    <td>{threat['action']}</td>
+                    <td class='{severity_class}'>{threat['severity']}</td>
+                    <td>{threat['risk_score']}</td>
+                    <td>{threat['department']}</td>
+                </tr>
+                """
+            
+            body += "</table>"
+            
+            if total_count > 5:
+                body += f"<p>... and {total_count - 5} more critical threats. Check dashboard for complete list.</p>"
+        
+        # Recommendations
+        body += """
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 5px;">
+            <h3>💡 Immediate Actions Required:</h3>
+            <ul>
+                <li>Review all critical threats immediately</li>
+                <li>Isolate affected systems if necessary</li>
+                <li>Investigate user activity patterns</li>
+                <li>Check for data exfiltration attempts</li>
+                <li>Update security policies if needed</li>
+            </ul>
+        </div>
+        """
+        
+        return body
+
+# Create global alert system
+auto_alert_system = AutoAlertSystem()
 
 # ============================================
 # REPORT GENERATION FUNCTIONS
@@ -527,25 +775,343 @@ def get_database_stats():
         return {}
 
 # ============================================
+# EMAIL ALERT FUNCTIONS
+# ============================================
+
+def send_email_alert(subject, body, recipients=None, html=True):
+    """Send email alert using SMTP"""
+    if not EMAIL_CONFIG["enabled"]:
+        return {"success": False, "message": "Email alerts disabled"}
+    
+    try:
+        import smtplib
+        from email.mime.text import MIMEText
+        from email.mime.multipart import MIMEMultipart
+        
+        # Get recipient list
+        if recipients is None:
+            recipients = EMAIL_CONFIG["recipients"]
+        
+        # Setup email
+        msg = MIMEMultipart('alternative')
+        msg['From'] = f"{EMAIL_CONFIG['sender_name']} <{EMAIL_CONFIG['sender_email']}>"
+        msg['To'] = ", ".join(recipients)
+        msg['Subject'] = f"🚨 INSIDER GUARD: {subject}"
+        
+        # Create HTML email
+        html_template = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                body {{
+                    font-family: Arial, sans-serif;
+                    background-color: #0a0a0a;
+                    color: #333;
+                    margin: 0;
+                    padding: 20px;
+                }}
+                .container {{
+                    max-width: 600px;
+                    margin: 0 auto;
+                    background: white;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+                }}
+                .header {{
+                    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+                    color: #00ff41;
+                    padding: 30px;
+                    text-align: center;
+                    border-bottom: 3px solid #00ff41;
+                }}
+                .content {{
+                    padding: 30px;
+                }}
+                .alert-box {{
+                    background: #fff3cd;
+                    border: 1px solid #ffeaa7;
+                    border-radius: 5px;
+                    padding: 15px;
+                    margin: 20px 0;
+                }}
+                .threat-table {{
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }}
+                .threat-table th, .threat-table td {{
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }}
+                .threat-table th {{
+                    background-color: #0a0a0a;
+                    color: #00ff41;
+                }}
+                .critical {{
+                    color: #ff0033;
+                    font-weight: bold;
+                }}
+                .high {{
+                    color: #ff6600;
+                    font-weight: bold;
+                }}
+                .medium {{
+                    color: #ffcc00;
+                }}
+                .footer {{
+                    background: #f8f9fa;
+                    padding: 20px;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px;
+                    border-top: 1px solid #ddd;
+                }}
+                .button {{
+                    display: inline-block;
+                    background: linear-gradient(135deg, #00ff41 0%, #008f11 100%);
+                    color: white;
+                    padding: 12px 25px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🛡️ INSIDER GUARD</h1>
+                    <p>Threat Intelligence Alert System</p>
+                </div>
+                <div class="content">
+                    {body}
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="http://localhost:8501" class="button">🚀 Access Dashboard</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>This is an automated alert from INSIDER GUARD Threat Detection System.</p>
+                    <p>Defense Beyond Monitoring | {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+                    <p>If you believe you received this email in error, please contact your security administrator.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        """
+        
+        # Attach HTML content
+        msg.attach(MIMEText(html_template, 'html'))
+        
+        # Connect to SMTP server
+        server = smtplib.SMTP(EMAIL_CONFIG["smtp_server"], EMAIL_CONFIG["smtp_port"])
+        server.starttls()
+        server.login(EMAIL_CONFIG["smtp_username"], EMAIL_CONFIG["smtp_password"])
+        
+        # Send email
+        server.send_message(msg)
+        server.quit()
+        
+        # Update last sent time
+        EMAIL_CONFIG["last_sent"] = datetime.now().isoformat()
+        
+        return {"success": True, "message": f"Email sent to {len(recipients)} recipients"}
+        
+    except Exception as e:
+        error_msg = str(e)
+        # Don't expose password in error message
+        if "password" in error_msg.lower():
+            error_msg = "Authentication failed. Check email credentials."
+        return {"success": False, "message": f"Email sending failed: {error_msg[:100]}"}
+
+def generate_threat_email_body(threats_df, alert_type="immediate"):
+    """Generate HTML email body for threats"""
+    if threats_df.empty:
+        return "<p>No threats to report.</p>"
+    
+    threat_count = len(threats_df)
+    critical_count = len(threats_df[threats_df['severity'] == 'Critical'])
+    high_count = len(threats_df[threats_df['severity'] == 'High'])
+    
+    # Summary section
+    body = f"""
+    <div class="alert-box">
+        <h2>🚨 Threat Alert: {alert_type.title()}</h2>
+        <p><strong>Generated:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+        <p><strong>Total Threats:</strong> {threat_count}</p>
+        <p><strong>Critical:</strong> <span class="critical">{critical_count}</span></p>
+        <p><strong>High:</strong> <span class="high">{high_count}</span></p>
+    </div>
+    """
+    
+    # Top threats table
+    if threat_count > 0:
+        body += "<h3>📋 Top Threat Activity:</h3>"
+        body += "<table class='threat-table'>"
+        body += "<tr><th>Time</th><th>User</th><th>Action</th><th>Severity</th><th>Risk</th><th>Department</th></tr>"
+        
+        for _, threat in threats_df.head(10).iterrows():
+            severity_class = threat['severity'].lower()
+            body += f"""
+            <tr>
+                <td>{pd.to_datetime(threat['timestamp']).strftime('%H:%M')}</td>
+                <td>{threat['user'].split('@')[0] if '@' in threat['user'] else threat['user']}</td>
+                <td>{threat['action']}</td>
+                <td class='{severity_class}'>{threat['severity']}</td>
+                <td>{threat['risk_score']}</td>
+                <td>{threat['department']}</td>
+            </tr>
+            """
+        
+        body += "</table>"
+        
+        if threat_count > 10:
+            body += f"<p>... and {threat_count - 10} more threats. Check dashboard for complete list.</p>"
+    
+    # Recommendations
+    body += """
+    <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 5px;">
+        <h3>💡 Recommended Actions:</h3>
+        <ul>
+            <li>Review critical threats immediately</li>
+            <li>Investigate high-risk user activity</li>
+            <li>Check affected systems for compromise</li>
+            <li>Update security policies if needed</li>
+        </ul>
+    </div>
+    """
+    
+    return body
+
+def send_immediate_alerts(threats_df):
+    """Send immediate alerts for critical/high threats"""
+    if not EMAIL_CONFIG["enabled"] or not EMAIL_CONFIG["send_immediate_alerts"]:
+        return None
+    
+    # Filter by alert levels
+    alert_levels = EMAIL_CONFIG["alert_levels"]
+    filtered_threats = threats_df[threats_df['severity'].isin(alert_levels)]
+    
+    if len(filtered_threats) == 0:
+        return None
+    
+    # Get recent threats (last 15 minutes)
+    recent_threats = filtered_threats.copy()
+    recent_threats['timestamp_dt'] = pd.to_datetime(recent_threats['timestamp'])
+    cutoff_time = datetime.now() - timedelta(minutes=15)
+    recent_threats = recent_threats[recent_threats['timestamp_dt'] >= cutoff_time]
+    
+    if len(recent_threats) == 0:
+        return None
+    
+    # Generate and send email
+    critical_count = len(recent_threats[recent_threats['severity'] == 'Critical'])
+    
+    if critical_count > 0:
+        subject = f"CRITICAL ALERT: {critical_count} Critical Threat(s) Detected"
+    else:
+        subject = f"High Priority Alert: {len(recent_threats)} Threat(s) Detected"
+    
+    body = generate_threat_email_body(recent_threats, "immediate")
+    
+    result = send_email_alert(subject, body)
+    return result
+
+def send_daily_digest(threats_df):
+    """Send daily threat digest"""
+    if not EMAIL_CONFIG["enabled"] or not EMAIL_CONFIG["send_daily_digest"]:
+        return None
+    
+    # Get threats from last 24 hours
+    recent_threats = threats_df.copy()
+    recent_threats['timestamp_dt'] = pd.to_datetime(recent_threats['timestamp'])
+    cutoff_time = datetime.now() - timedelta(hours=24)
+    daily_threats = recent_threats[recent_threats['timestamp_dt'] >= cutoff_time]
+    
+    if len(daily_threats) == 0:
+        return None
+    
+    # Generate and send email
+    subject = f"Daily Digest: {len(daily_threats)} Threats in Last 24 Hours"
+    body = generate_threat_email_body(daily_threats, "daily")
+    
+    return send_email_alert(subject, body)
+
+def test_email_connection():
+    """Test email configuration and connection"""
+    if not EMAIL_CONFIG["enabled"]:
+        return {"success": False, "message": "Email alerts are disabled"}
+    
+    try:
+        import smtplib
+        
+        # Test SMTP connection
+        server = smtplib.SMTP(EMAIL_CONFIG["smtp_server"], EMAIL_CONFIG["smtp_port"])
+        server.starttls()
+        server.login(EMAIL_CONFIG["smtp_username"], EMAIL_CONFIG["smtp_password"])
+        server.quit()
+        
+        # Send test email
+        test_subject = "INSIDER GUARD: Test Email Configuration"
+        test_body = """
+        <h2>✅ Email Configuration Test Successful</h2>
+        <p>This is a test email from your INSIDER GUARD Threat Detection System.</p>
+        <p>If you received this email, your email alert system is properly configured.</p>
+        <p><strong>Configuration Details:</strong></p>
+        <ul>
+            <li>SMTP Server: """ + EMAIL_CONFIG["smtp_server"] + """</li>
+            <li>Sender: """ + EMAIL_CONFIG["sender_email"] + """</li>
+            <li>Test Time: """ + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """</li>
+        </ul>
+        """
+        
+        result = send_email_alert(test_subject, test_body)
+        
+        if result["success"]:
+            return {"success": True, "message": "✅ Email configuration test successful! Test email sent."}
+        else:
+            return result
+            
+    except Exception as e:
+        error_msg = str(e)
+        if "password" in error_msg.lower():
+            error_msg = "Authentication failed. Check email credentials."
+        return {"success": False, "message": f"❌ Connection test failed: {error_msg[:100]}"}
+
+# ============================================
 # DATA GENERATION FUNCTIONS
 # ============================================
 
 def generate_sample_threats(num=100):
-    """Generate sample threat data"""
+    """Generate sample threat data - INCREASED CRITICAL THREATS FOR TESTING"""
     np.random.seed(42)
     
     threats = []
     for i in range(num):
+        # Generate more critical threats for testing
+        if i % 10 == 0:  # Every 10th threat is critical (10% instead of 1%)
+            severity = "Critical"
+            risk_score = np.random.randint(85, 99)
+        elif i % 5 == 0:  # Every 5th threat is high
+            severity = "High"
+            risk_score = np.random.randint(70, 89)
+        else:
+            severity = np.random.choice(["Medium", "Low"], p=[0.3, 0.7])
+            risk_score = np.random.randint(10, 69)
+        
         threat = {
             "id": f"THR{i:04d}",
-            "timestamp": (datetime.now() - timedelta(hours=np.random.randint(0, 72))).isoformat(),
+            "timestamp": (datetime.now() - timedelta(minutes=np.random.randint(0, 60))).isoformat(),  # Recent threats
             "user": f"user{np.random.randint(1000, 9999)}@company.com",
             "action": np.random.choice(["Unauthorized Access", "Data Export", "Suspicious Login", 
                                        "File Modification", "Process Execution", "Privilege Escalation",
                                        "Data Exfiltration", "Malware Execution", "Credential Dumping"]),
-            "severity": np.random.choice(["Critical", "High", "Medium", "Low"], p=[0.1, 0.2, 0.3, 0.4]),
+            "severity": severity,
             "department": np.random.choice(ENTERPRISE_CONFIG["departments"]),
-            "risk_score": np.random.randint(10, 95),
+            "risk_score": risk_score,
             "status": np.random.choice(["Investigating", "Contained", "Resolved", "Pending"], p=[0.4, 0.2, 0.2, 0.2]),
             "source_ip": f"192.168.{np.random.randint(1,254)}.{np.random.randint(1,254)}",
             "destination_ip": f"10.0.{np.random.randint(1,254)}.{np.random.randint(1,254)}",
@@ -578,6 +1144,33 @@ def generate_sysmon_sample(num=50):
     return pd.DataFrame(events)
 
 # ============================================
+# MANUAL TEST FUNCTION
+# ============================================
+
+def trigger_test_alert():
+    """Manually trigger a test alert"""
+    try:
+        # Create test threat data
+        test_threat = pd.DataFrame([{
+            "id": "TEST-001",
+            "timestamp": datetime.now().isoformat(),
+            "user": "test_user@company.com",
+            "action": "Test Alert - Unauthorized Access",
+            "severity": "Critical",
+            "department": "Security",
+            "risk_score": 95,
+            "status": "Investigating",
+            "source_ip": "192.168.1.100",
+            "destination_ip": "10.0.0.1"
+        }])
+        
+        result = send_immediate_alerts(test_threat)
+        return result
+        
+    except Exception as e:
+        return {"success": False, "message": f"Test failed: {str(e)}"}
+
+# ============================================
 # MAIN DASHBOARD CLASS
 # ============================================
 
@@ -606,58 +1199,148 @@ class InsiderThreatDashboard:
         if 'notifications' not in st.session_state:
             st.session_state.notifications = [
                 {"id": 1, "type": "info", "message": "Welcome to the Insider Threat Dashboard!", "time": "Just now"},
-                {"id": 2, "type": "warning", "message": "3 critical threats detected", "time": "5 min ago"}
+                {"id": 2, "type": "info", "message": "Auto-alert system is running", "time": "Just now"}
             ]
+        if 'show_notifications' not in st.session_state:
+            st.session_state.show_notifications = False
+        if 'current_tab' not in st.session_state:
+            st.session_state.current_tab = 'dashboard'
+        if 'auto_alert_started' not in st.session_state:
+            st.session_state.auto_alert_started = False
+        
+        # Start auto-alert system if not already started
+        if EMAIL_CONFIG["enabled"] and not st.session_state.auto_alert_started:
+            try:
+                auto_alert_system.start()
+                st.session_state.auto_alert_started = True
+                st.session_state.notifications.append({
+                    "id": len(st.session_state.notifications) + 1,
+                    "type": "info",
+                    "message": "Auto-alert system started. Checking for critical threats every 30 seconds.",
+                    "time": "Just now"
+                })
+            except Exception as e:
+                print(f"Failed to start auto-alert: {str(e)}")
     
     def create_header(self):
-        """Create enhanced dashboard header"""
+        """Create professional header with integrated logo"""
         user = st.session_state.current_user
         
-        # Header with notifications
+        if st.session_state.threat_data is not None:
+            df = st.session_state.threat_data
+            critical = len(df[df['severity'] == 'Critical'])
+            high = len(df[df['severity'] == 'High'])
+            investigating = len(df[df['status'] == 'Investigating'])
+        else:
+            critical = high = investigating = 0
+        
+        # Header with logo
         col1, col2, col3 = st.columns([3, 1, 1])
         
         with col1:
-            st.markdown(f"""
-            <div class="main-header">
-                <h1>🛡️ {ENTERPRISE_CONFIG["company_name"]}</h1>
-                <p>Advanced Threat Intelligence & Reporting Platform</p>
-                <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <span style="background: rgba(0,255,65,0.2); padding: 5px 15px; border-radius: 20px; border: 1px solid #00ff41;">
-                        {user['avatar']} {user['username']}
-                    </span>
-                    <span style="background: rgba(0,255,65,0.2); padding: 5px 15px; border-radius: 20px; border: 1px solid #00ff41;">
-                        🏢 {user['department']}
-                    </span>
-                    <span style="background: rgba(0,255,65,0.2); padding: 5px 15px; border-radius: 20px; border: 1px solid #00ff41;">
-                        {'⚡ DATABASE: ONLINE' if DB_CONFIG['enabled'] else '⚠️ DATABASE: OFFLINE'}
-                    </span>
-                    <span style="background: rgba(0,255,65,0.2); padding: 5px 15px; border-radius: 20px; border: 1px solid #00ff41;">
-                        🕐 {datetime.now().strftime('%H:%M')}
-                    </span>
+            # Logo and title section
+            if st.session_state.logo_base64:
+                # Use HTML for circular logo
+                logo_html = f"""
+                <div class="logo-container">
+                    <div class="circular-logo">
+                        <img src="data:image/jpeg;base64,{st.session_state.logo_base64}">
+                    </div>
+                    <div>
+                        <h1 style="color: #00ff41; margin: 0; font-size: 28px; font-family: 'Courier New', monospace;">
+                            INSIDER GUARD
+                        </h1>
+                        <p style="color: rgba(0, 255, 65, 0.8); margin: 5px 0 0 0; font-size: 14px;">
+                            Advanced Threat Intelligence Platform • Defense Beyond Monitoring
+                        </p>
+                    </div>
                 </div>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        with col2:
-            # Quick stats
-            if st.session_state.threat_data is not None:
-                df = st.session_state.threat_data
-                critical = len(df[df['severity'] == 'Critical'])
+                """
+                st.markdown(logo_html, unsafe_allow_html=True)
+            else:
                 st.markdown(f"""
-                <div style="text-align: center;">
-                    <div style="font-size: 24px; color: #ff0033;">{critical}</div>
-                    <div style="font-size: 12px;">Critical Threats</div>
+                <div style="margin-bottom: 15px;">
+                    <h1 style="color: #00ff41; margin: 0; font-size: 28px; font-family: 'Courier New', monospace;">
+                        🛡️ {ENTERPRISE_CONFIG["company_name"]}
+                    </h1>
+                    <p style="color: rgba(0, 255, 65, 0.8); margin: 5px 0 0 0; font-size: 14px;">
+                        Advanced Threat Intelligence & Reporting Platform
+                    </p>
                 </div>
                 """, unsafe_allow_html=True)
+            
+            # Status bar using Streamlit columns (NO HTML)
+            st.markdown('<div class="status-bar">', unsafe_allow_html=True)
+            
+            status_cols = st.columns(5)
+            with status_cols[0]:
+                st.markdown(f"**👤 {user['username']}**", unsafe_allow_html=True)
+            
+            with status_cols[1]:
+                st.markdown(f"**🏢 {user['department']}**", unsafe_allow_html=True)
+            
+            with status_cols[2]:
+                status_color = "#00ff41" if EMAIL_CONFIG['enabled'] else "#ff6600"
+                status_icon = "🚨" if EMAIL_CONFIG['enabled'] else "⚠️"
+                status_text = "Alerts ON" if EMAIL_CONFIG['enabled'] else "Alerts OFF"
+                st.markdown(f"<span style='color: {status_color};'>**{status_icon} {status_text}**</span>", unsafe_allow_html=True)
+            
+            with status_cols[3]:
+                current_time = datetime.now().strftime('%H:%M:%S')
+                st.markdown(f"**🕐 {current_time}**", unsafe_allow_html=True)
+            
+            with status_cols[4]:
+                st.markdown(f"**🚨 {critical} Critical**", unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+            
+            # Additional metrics row
+            metrics_cols = st.columns(3)
+            with metrics_cols[0]:
+                st.metric("High Threats", high, delta=None)
+            with metrics_cols[1]:
+                st.metric("Active Investigations", investigating, delta=None)
+            with metrics_cols[2]:
+                if st.session_state.threat_data is not None:
+                    avg_risk = df['risk_score'].mean()
+                else:
+                    avg_risk = 0
+                st.metric("Avg Risk Score", f"{avg_risk:.1f}", delta=None)
+        
+        with col2:
+            # Quick stats box
+            with st.container():
+                st.markdown("### Quick Stats")
+                if st.session_state.threat_data is not None:
+                    df = st.session_state.threat_data
+                    total = len(df)
+                    st.metric("Total", total, delta=None)
+                else:
+                    st.metric("Total", 0, delta=None)
         
         with col3:
-            # Notification bell
+            # Notification button
             notification_count = len([n for n in st.session_state.notifications if n['type'] == 'warning'])
-            if st.button(f"🔔 ({notification_count})", help="View notifications", key="notif_btn"):
-                st.session_state.show_notifications = not st.session_state.get('show_notifications', False)
+            if st.button(f"🔔 ({notification_count})", help="View notifications", key="notif_btn", use_container_width=True):
+                st.session_state.show_notifications = not st.session_state.show_notifications
+            
+            # Test Alert button
+            if st.button("📧 Test Email", help="Send test alert", key="test_alert_btn", use_container_width=True):
+                result = trigger_test_alert()
+                if result and result.get("success"):
+                    st.success("✅ Test email sent!")
+                    st.session_state.notifications.append({
+                        "id": len(st.session_state.notifications) + 1,
+                        "type": "info",
+                        "message": "Test email alert sent successfully",
+                        "time": "Just now"
+                    })
+                else:
+                    st.error(f"❌ Test failed: {result.get('message', 'Unknown error')}")
+                st.rerun()
         
         # Notifications panel
-        if st.session_state.get('show_notifications', False):
+        if st.session_state.show_notifications:
             with st.expander("📢 Notifications", expanded=True):
                 for notification in st.session_state.notifications:
                     icon = "ℹ️" if notification['type'] == 'info' else "⚠️" if notification['type'] == 'warning' else "✅"
@@ -670,6 +1353,49 @@ class InsiderThreatDashboard:
     def create_sidebar(self):
         """Create enhanced sidebar with quick actions"""
         with st.sidebar:
+            # Logo in sidebar (using HTML for circular design)
+            if st.session_state.logo_base64:
+                logo_html = f"""
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="
+                        background: linear-gradient(135deg, rgba(0, 255, 65, 0.2) 0%, rgba(0, 255, 65, 0.1) 100%);
+                        padding: 10px;
+                        border-radius: 50%;
+                        border: 2px solid #00ff41;
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+                        overflow: hidden;
+                    ">
+                        <img src="data:image/jpeg;base64,{st.session_state.logo_base64}" 
+                             style="
+                                width: 85px;
+                                height: 85px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                border: 1px solid #00ff41;
+                             ">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <h3 style="color: #00ff41; margin: 5px 0; font-family: 'Courier New', monospace; font-size: 16px;">INSIDER GUARD</h3>
+                        <p style="color: #00ff41; margin: 0; font-size: 10px; font-family: 'Courier New', monospace; opacity: 0.8;">
+                            Defense Beyond Monitoring
+                        </p>
+                    </div>
+                </div>
+                """
+                st.markdown(logo_html, unsafe_allow_html=True)
+            else:
+                st.markdown("### INSIDER GUARD")
+                st.markdown("*Defense Beyond Monitoring*")
+            
+            st.markdown("---")
+            
             # User profile
             st.markdown("### 👤 USER PROFILE")
             user = st.session_state.current_user
@@ -723,11 +1449,29 @@ class InsiderThreatDashboard:
                     st.rerun()
             
             with action_cols[1]:
-                if st.button("🚨", help="New Alert", use_container_width=True):
+                if st.button("🚨", help="Generate Critical Threat", use_container_width=True):
+                    # Add a critical threat for testing
+                    new_threat = pd.DataFrame([{
+                        "id": f"TEST-{int(time.time())}",
+                        "timestamp": datetime.now().isoformat(),
+                        "user": "test_user@company.com",
+                        "action": "Manual Test - Critical Threat",
+                        "severity": "Critical",
+                        "department": "Security",
+                        "risk_score": 95,
+                        "status": "Investigating",
+                        "source_ip": "192.168.1.100",
+                        "destination_ip": "10.0.0.1"
+                    }])
+                    
+                    # Add to existing data
+                    if st.session_state.threat_data is not None:
+                        st.session_state.threat_data = pd.concat([st.session_state.threat_data, new_threat], ignore_index=True)
+                    
                     st.session_state.notifications.append({
                         "id": len(st.session_state.notifications) + 1,
                         "type": "warning",
-                        "message": "Test alert generated",
+                        "message": "Manual critical threat generated",
                         "time": "Just now"
                     })
                     st.rerun()
@@ -756,36 +1500,32 @@ class InsiderThreatDashboard:
                     </div>
                     """, unsafe_allow_html=True)
             
-            # Database Status
-            st.markdown("### 🗄️ DATABASE STATUS")
-            if DB_CONFIG["enabled"]:
-                try:
-                    stats = get_database_stats()
-                    if stats:
-                        st.progress(stats.get('recent_threats', 0) / max(stats.get('threat_count', 1), 1), 
-                                   text=f"24h: {stats.get('recent_threats', 0)} threats")
-                    else:
-                        st.caption("Connected - No data")
-                except Exception as e:
-                    st.caption("Connection error")
+            # Alert Status
+            st.markdown("### 🚨 ALERT STATUS")
+            if EMAIL_CONFIG["enabled"]:
+                st.success("✅ Auto-alerts ACTIVE")
+                if EMAIL_CONFIG.get("last_sent"):
+                    last_sent = pd.to_datetime(EMAIL_CONFIG["last_sent"]).strftime('%H:%M:%S')
+                    st.caption(f"Last alert: {last_sent}")
+                else:
+                    st.caption("No alerts sent yet")
             else:
-                st.warning("Database disabled")
+                st.warning("⚠️ Alerts disabled")
             
             st.markdown("---")
             
             # Help & Support
             with st.expander("❓ Help & Support"):
                 st.markdown("""
-                **Quick Tips:**
-                - Click on any chart for details
-                - Use filters to narrow down threats
-                - Export reports in multiple formats
-                - Bookmark important views
+                **Auto-Alert System:**
+                - Checks for critical threats every 30 seconds
+                - Sends email alerts automatically
+                - Respects 5-minute cooldown
+                - Test with "Generate Critical Threat" button
                 
                 **Support:**
                 - Email: soc@company.com
                 - Phone: x1234
-                - Documentation: [View Docs](#)
                 """)
     
     def create_dashboard_tab(self):
@@ -1151,45 +1891,6 @@ class InsiderThreatDashboard:
         else:
             st.info("No threats match the selected filters")
     
-    def parse_sysmon_message(self, message):
-        """Parse Sysmon message field to extract IP addresses and other fields"""
-        if pd.isna(message):
-            return {}
-        
-        result = {}
-        lines = str(message).split('\n')
-        
-        for line in lines:
-            line = line.strip()
-            if ':' in line:
-                key, value = line.split(':', 1)
-                key = key.strip()
-                value = value.strip()
-                
-                # Extract different fields
-                if key == 'SourceIp':
-                    result['source_ip'] = value
-                elif key == 'DestinationIp':
-                    result['destination_ip'] = value
-                elif key == 'Image':
-                    result['process_name'] = value
-                elif key == 'User':
-                    result['user'] = value
-                elif key == 'Protocol':
-                    result['protocol'] = value
-                elif key == 'SourcePort':
-                    result['source_port'] = value
-                elif key == 'DestinationPort':
-                    result['destination_port'] = value
-                elif key == 'ProcessId':
-                    result['process_id'] = value
-                elif key == 'UtcTime':
-                    result['utc_time'] = value
-                elif key == 'EventID' or key == 'Id':
-                    result['event_id'] = value
-        
-        return result
-    
     def create_sysmon_tab(self):
         """Create enhanced Sysmon analysis tab"""
         st.header("📡 ADVANCED LOG ANALYSIS")
@@ -1244,7 +1945,7 @@ class InsiderThreatDashboard:
             except Exception as e:
                 st.error(f"❌ Error loading file: {str(e)}")
                 sysmon_df = st.session_state.sysmon_data
-        elif hasattr(st.session_state, 'uploaded_sysmon'):
+        elif 'uploaded_sysmon' in st.session_state:
             sysmon_df = st.session_state.uploaded_sysmon
         else:
             sysmon_df = st.session_state.sysmon_data
@@ -1272,7 +1973,9 @@ class InsiderThreatDashboard:
         with metrics_cols[2]:
             # Count unique processes
             process_cols = [col for col in sysmon_df.columns if 'process' in col.lower() or 'image' in col.lower()]
-            process_count = len(sysmon_df[process_cols[0]].unique()) if process_cols else 0
+            process_count = 0
+            if process_cols:
+                process_count = len(sysmon_df[process_cols[0]].unique())
             st.metric("Unique Processes", process_count,
                      help="Unique processes detected")
         
