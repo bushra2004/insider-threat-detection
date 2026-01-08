@@ -1,0 +1,3393 @@
+"TimeCreated","Id","LevelDisplayName","Message"
+"24-08-2025 20:41:04","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:11:02.302
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49674
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 52.168.117.175
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:41:02","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:11:01.428
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59388
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:41:02","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:11:01.428
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62360
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:56","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:56.680
+ProcessGuid: {99ef7bdc-2b80-68ab-455e-000000001f00}
+ProcessId: 35572
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:56","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:56.680
+ProcessGuid: {99ef7bdc-2b80-68ab-445e-000000001f00}
+ProcessId: 50560
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:56","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:56.675
+ProcessGuid: {99ef7bdc-2b80-68ab-465e-000000001f00}
+ProcessId: 5528
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:55","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:55.444
+ProcessGuid: {99ef7bdc-2b7f-68ab-435e-000000001f00}
+ProcessId: 24656
+Image: C:\Windows\System32\wevtutil.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:42","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:40.500
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49230
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:40","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:38.546
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49670
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.189.173.18
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:39","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:37.619
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50061
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:39","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:37.618
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59510
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:31","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:31.755
+ProcessGuid: {99ef7bdc-2b67-68ab-425e-000000001f00}
+ProcessId: 20940
+Image: C:\Windows\System32\wevtutil.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:21","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:10:21.876
+ProcessGuid: {99ef7bdc-2b0e-68ab-3f5e-000000001f00}
+ProcessId: 48948
+Image: C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:40:21","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:19.068
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62785
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:21","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:19.068
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64027
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:21","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:19.067
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49665
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:17","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:15.880
+ProcessGuid: {99ef7bdc-c107-68aa-bb4f-000000001f00}
+ProcessId: 33280
+Image: \\?\C:\Program Files\McAfee\WPS\1.32.165.1\mc-fw-host.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61629
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 23.38.59.250
+DestinationHostname: a23-38-59-250.deploy.static.akamaitechnologies.com
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:17","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:15.677
+ProcessGuid: {99ef7bdc-5332-6887-ad00-000000001f00}
+ProcessId: 9556
+Image: C:\Program Files\Dell\MyDell\CustomerConnect\SubAgent\Dell.Customer.Connect.SubAgent.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55273
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.213.196.214
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:14.111
+ProcessGuid: {99ef7bdc-5332-6887-ad00-000000001f00}
+ProcessId: 9556
+Image: C:\Program Files\Dell\MyDell\CustomerConnect\SubAgent\Dell.Customer.Connect.SubAgent.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50084
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 104.215.78.13
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:14.487
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59959
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:14.486
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49700
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:14.124
+ProcessGuid: {99ef7bdc-2b0e-68ab-3f5e-000000001f00}
+ProcessId: 48948
+Image: C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55271
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.89.179.11
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:14.111
+ProcessGuid: {99ef7bdc-532d-6887-4e00-000000001f00}
+ProcessId: 4112
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55272
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 23.47.228.163
+DestinationHostname: -
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:15","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:13.301
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61335
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:14","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:12.817
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56817
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:14","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:12.816
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62939
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:14","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:12.782
+ProcessGuid: {99ef7bdc-532d-6887-4e00-000000001f00}
+ProcessId: 4112
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63382
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 23.47.229.231
+DestinationHostname: a23-47-229-231.deploy.static.akamaitechnologies.com
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:14","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:11.988
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 52172
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:10.591
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50939
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:10.590
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62856
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:09.970
+ProcessGuid: {99ef7bdc-532d-6887-4e00-000000001f00}
+ProcessId: 4112
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49671
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 142.250.77.99
+DestinationHostname: -
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:11","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:08.876
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51081
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:08.665
+ProcessGuid: {99ef7bdc-532d-6887-4e00-000000001f00}
+ProcessId: 4112
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49667
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:140f:3:0:0:0:17df:2f39
+DestinationHostname: -
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:08.484
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64562
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:1f18:24e6:b901:72e3:1bfe:b271:96b2
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:08.276
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53377
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:1f18:24e6:b901:72e3:1bfe:b271:96b2
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:08.226
+ProcessGuid: {99ef7bdc-532d-6887-4e00-000000001f00}
+ProcessId: 4112
+Image: C:\Windows\system32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64563
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 23.205.101.178
+DestinationHostname: -
+DestinationPort: 80
+DestinationPortName: http"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:07.163
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60262
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:07.162
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 54624
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:07.121
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51124
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:07.121
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62593
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:40:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:10:07.120
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53548
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:51","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:09:51.319
+ProcessGuid: {99ef7bdc-2b3e-68ab-405e-000000001f00}
+ProcessId: 54228
+Image: C:\Users\DELL\Desktop\insider-threat-detection\cyber-env\Scripts\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:39:51","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:09:51.303
+ProcessGuid: {99ef7bdc-2b3e-68ab-415e-000000001f00}
+ProcessId: 21388
+Image: C:\Users\DELL\AppData\Local\Programs\Python\Python311\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:39:47","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:45.092
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55458
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2620:1ec:bdf:0:0:0:0:58
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:46","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:44.442
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59588
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:46","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:44.442
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60202
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:46","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:44.441
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55737
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:45","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:42.942
+ProcessGuid: {99ef7bdc-1d14-68ab-ea5b-000000001f00}
+ProcessId: 50908
+Image: C:\Program Files\Microsoft OneDrive\25.140.0720.0001\Microsoft.SharePoint.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55456
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.107.137.11
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:45","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:42.942
+ProcessGuid: {99ef7bdc-1d14-68ab-e95b-000000001f00}
+ProcessId: 22260
+Image: C:\Program Files\Microsoft OneDrive\25.140.0720.0001\Microsoft.SharePoint.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55457
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.107.137.11
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:44","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:42.217
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64289
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:33","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:31.155
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56325
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:33","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:31.155
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50212
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:33","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:31.154
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57706
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:23.856
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49747
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.107.246.58
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:23.855
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49745
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2620:1ec:bdf:0:0:0:0:58
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:23.301
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49744
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2620:1ec:bdf:0:0:0:0:58
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:22.431
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58306
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:22.430
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60434
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:22.429
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58565
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:21.944
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63390
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:22","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:20.630
+ProcessGuid: {99ef7bdc-1d0f-68ab-e55b-000000001f00}
+ProcessId: 57048
+Image: C:\Program Files\Microsoft OneDrive\OneDrive.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55541
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:14bd:ad0c
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:11.414
+ProcessGuid: {99ef7bdc-2b0e-68ab-3f5e-000000001f00}
+ProcessId: 48948
+Image: C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61534
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2603:1063:27:1:0:0:0:14
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:11.228
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51511
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:11.227
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63856
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:10.858
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63174
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:10.854
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 52935
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 140.82.112.21
+DestinationHostname: lb-140-82-112-21-iad.github.com
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:09.835
+ProcessGuid: {99ef7bdc-533a-6887-bf00-000000001f00}
+ProcessId: 11592
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61627
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:140f:6:0:0:0:17c7:43d3
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:09.120
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59473
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:09.119
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53608
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:07.841
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 52120
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:09","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:07.841
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58418
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:08","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:06.346
+ProcessGuid: {99ef7bdc-533a-6887-bf00-000000001f00}
+ProcessId: 11592
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\SYSTEM
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55165
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.107.246.58
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:07","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:06.346
+ProcessGuid: {99ef7bdc-2b0e-68ab-3f5e-000000001f00}
+ProcessId: 48948
+Image: C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55164
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 13.89.179.11
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:39:05","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:03.998
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55483
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:05","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:03.997
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59198
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:05","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:03.040
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56294
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:39:05","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:09:03.038
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57195
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:57","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:55.618
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55162
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.207.73.85
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:57","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:55.297
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55161
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.207.73.85
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:56","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:55.028
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60347
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:56","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:55.028
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60020
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:56","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:55.026
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50348
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:42","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:40.322
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51095
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:41","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:39.309
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58256
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:40","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:37.829
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55160
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 3.233.158.24
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:40","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:37.828
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 65255
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:1f18:24e6:b901:72e3:1bfe:b271:96b2
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:39","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:37.560
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57920
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 3.233.158.24
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:37","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:35.826
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64800
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:37","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:35.825
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57545
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:37","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:35.824
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62044
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:35","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:33.250
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60309
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:33","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:32.134
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61665
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 140.82.113.21
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:33","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:32.134
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61666
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 140.82.113.21
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:29","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:27.795
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51179
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:29","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:27.795
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 50811
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:27","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:27.622
+ProcessGuid: {99ef7bdc-2aeb-68ab-3d5e-000000001f00}
+ProcessId: 52428
+Image: C:\Users\DELL\Desktop\insider-threat-detection\cyber-env\Scripts\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:27","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:27.617
+ProcessGuid: {99ef7bdc-2aeb-68ab-3e5e-000000001f00}
+ProcessId: 21048
+Image: C:\Users\DELL\AppData\Local\Programs\Python\Python311\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:23.582
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59414
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:34a8:7042
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:18","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.648
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53364
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:34a8:7042
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:18","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.144
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55622
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:17","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:15.359
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 65171
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:34a8:7042
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.934
+ProcessGuid: {99ef7bdc-2ae0-68ab-3a5e-000000001f00}
+ProcessId: 20700
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.934
+ProcessGuid: {99ef7bdc-2ae0-68ab-385e-000000001f00}
+ProcessId: 47356
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.926
+ProcessGuid: {99ef7bdc-2ae0-68ab-3c5e-000000001f00}
+ProcessId: 39724
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.926
+ProcessGuid: {99ef7bdc-2ae0-68ab-395e-000000001f00}
+ProcessId: 32460
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.918
+ProcessGuid: {99ef7bdc-2ae0-68ab-375e-000000001f00}
+ProcessId: 50100
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.918
+ProcessGuid: {99ef7bdc-2ae0-68ab-3b5e-000000001f00}
+ProcessId: 4020
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.763
+ProcessGuid: {99ef7bdc-2ae0-68ab-345e-000000001f00}
+ProcessId: 23596
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.763
+ProcessGuid: {99ef7bdc-2ae0-68ab-325e-000000001f00}
+ProcessId: 15736
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.757
+ProcessGuid: {99ef7bdc-2ae0-68ab-335e-000000001f00}
+ProcessId: 17016
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.757
+ProcessGuid: {99ef7bdc-2ae0-68ab-365e-000000001f00}
+ProcessId: 38560
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.750
+ProcessGuid: {99ef7bdc-2ae0-68ab-315e-000000001f00}
+ProcessId: 24804
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:16.738
+ProcessGuid: {99ef7bdc-2ae0-68ab-355e-000000001f00}
+ProcessId: 37992
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:14.791
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 65169
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.207.73.85
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:14.791
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51234
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:68d0:105a
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:14.682
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51233
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:34a8:7042
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:16","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:14.444
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 54133
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 64:ff9b:0:0:0:0:68d0:105a
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:15","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:13.636
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 54711
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:15","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:13.638
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62897
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:15","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:13.638
+ProcessGuid: {99ef7bdc-ed17-68aa-9c53-000000001f00}
+ProcessId: 17184
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60629
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:12","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:12.759
+ProcessGuid: {99ef7bdc-2adc-68ab-2f5e-000000001f00}
+ProcessId: 49156
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:12","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:12.759
+ProcessGuid: {99ef7bdc-2adc-68ab-2e5e-000000001f00}
+ProcessId: 51224
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:12","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:12.759
+ProcessGuid: {99ef7bdc-2adc-68ab-305e-000000001f00}
+ProcessId: 7944
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:12","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:10.782
+ProcessGuid: {99ef7bdc-f9a1-68aa-c656-000000001f00}
+ProcessId: 51616
+Image: C:\Program Files\Microsoft Office\Root\Office16\SDXHelper.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63557
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2603:1063:27:2:0:0:0:14
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:38:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.187
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63990
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.187
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59818
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:10","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.185
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53259
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.534
+ProcessGuid: {99ef7bdc-2ad8-68ab-2a5e-000000001f00}
+ProcessId: 3336
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.534
+ProcessGuid: {99ef7bdc-2ad8-68ab-2b5e-000000001f00}
+ProcessId: 43480
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.534
+ProcessGuid: {99ef7bdc-2ad8-68ab-285e-000000001f00}
+ProcessId: 49884
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.534
+ProcessGuid: {99ef7bdc-2ad8-68ab-295e-000000001f00}
+ProcessId: 57180
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.526
+ProcessGuid: {99ef7bdc-2ad8-68ab-2c5e-000000001f00}
+ProcessId: 17780
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.526
+ProcessGuid: {99ef7bdc-2ad8-68ab-2d5e-000000001f00}
+ProcessId: 15952
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.410
+ProcessGuid: {99ef7bdc-2ad8-68ab-255e-000000001f00}
+ProcessId: 30568
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.405
+ProcessGuid: {99ef7bdc-2ad8-68ab-245e-000000001f00}
+ProcessId: 51700
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.397
+ProcessGuid: {99ef7bdc-2ad8-68ab-275e-000000001f00}
+ProcessId: 50132
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.381
+ProcessGuid: {99ef7bdc-2ad8-68ab-235e-000000001f00}
+ProcessId: 10144
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.378
+ProcessGuid: {99ef7bdc-2ad8-68ab-225e-000000001f00}
+ProcessId: 7144
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:38:08","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:08:08.370
+ProcessGuid: {99ef7bdc-2ad8-68ab-265e-000000001f00}
+ProcessId: 14276
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:45","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:44.754
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56059
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:45","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:44.754
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60773
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:45","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:44.753
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 52505
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:35","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:35.969
+ProcessGuid: {99ef7bdc-2ab7-68ab-205e-000000001f00}
+ProcessId: 5948
+Image: C:\Users\DELL\Desktop\insider-threat-detection\cyber-env\Scripts\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:35","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:35.968
+ProcessGuid: {99ef7bdc-2ab7-68ab-215e-000000001f00}
+ProcessId: 53068
+Image: C:\Users\DELL\AppData\Local\Programs\Python\Python311\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:28","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:28.578
+ProcessGuid: {99ef7bdc-2ab0-68ab-1e5e-000000001f00}
+ProcessId: 55632
+Image: C:\Users\DELL\Desktop\insider-threat-detection\cyber-env\Scripts\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:28","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:28.578
+ProcessGuid: {99ef7bdc-2ab0-68ab-1f5e-000000001f00}
+ProcessId: 7604
+Image: C:\Users\DELL\AppData\Local\Programs\Python\Python311\python.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:22.255
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51176
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:22.254
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 65335
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:24","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:22.253
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55527
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:08","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:06.437
+ProcessGuid: {99ef7bdc-ed18-68aa-a153-000000001f00}
+ProcessId: 53460
+Image: C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\Code.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61931
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 20.189.173.25
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:37:08","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:07:05.908
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63278
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:37:01","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:01.470
+ProcessGuid: {99ef7bdc-2a95-68ab-1c5e-000000001f00}
+ProcessId: 43484
+Image: C:\Windows\System32\conhost.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:01","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:01.464
+ProcessGuid: {99ef7bdc-2a95-68ab-1b5e-000000001f00}
+ProcessId: 42292
+Image: C:\Program Files\Git\cmd\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:01","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:01.461
+ProcessGuid: {99ef7bdc-2a95-68ab-1d5e-000000001f00}
+ProcessId: 7772
+Image: C:\Program Files\Git\mingw64\bin\git.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:37:00","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:07:00.062
+ProcessGuid: {99ef7bdc-2a94-68ab-1a5e-000000001f00}
+ProcessId: 9564
+Image: C:\Windows\System32\wevtutil.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:36:59","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:06:59.904
+ProcessGuid: {99ef7bdc-2a93-68ab-195e-000000001f00}
+ProcessId: 5600
+Image: C:\Users\DELL\Desktop\insider-threat-detection\Sysmon\Sysmon64.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:36:53","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:51.154
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53496
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:53","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:51.153
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 54282
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:53","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:51.153
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57492
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:48","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:46.326
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62554
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2606:4700:4400:0:0:0:ac40:94eb
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:36:48","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:46.144
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59259
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:48","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:46.144
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63825
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:48","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:46.143
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 61152
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:47","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:44.994
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: 2402:8100:25da:ae5a:7953:108e:dfca:e64c
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59160
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: 2600:1901:0:47fc:0:0:0:0
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https"
+"24-08-2025 20:36:44","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:42.371
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49930
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:44","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:42.370
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 53694
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:44","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:42.369
+ProcessGuid: {99ef7bdc-bd4b-68aa-874e-000000001f00}
+ProcessId: 25820
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55149
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:28","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:06:28.605
+ProcessGuid: {99ef7bdc-288a-68ab-a85d-000000001f00}
+ProcessId: 27896
+Image: C:\Windows\System32\smartscreen.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:36:27","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:06:27.027
+ProcessGuid: {99ef7bdc-281b-68ab-9a5d-000000001f00}
+ProcessId: 28972
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\SYSTEM"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.514
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56813
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.514
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 56813
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.509
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63993
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.508
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63993
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.497
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59508
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.496
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 59508
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.483
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62566
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.482
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62566
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.021
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58797
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:23.020
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58797
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.935
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 63137
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.935
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 63137
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.934
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 51756
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.934
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 62603
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.934
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 62603
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.934
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51756
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:25","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:22.934
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 64231
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.485
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49981
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.484
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 49981
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.480
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51099
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.480
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57295
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.479
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 51099
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.479
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:428a:e124:e662:2083
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 57295
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.125
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 57378
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.124
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: -
+SourcePort: 57378
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.124
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 49706
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.123
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: -
+SourcePort: 49706
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.123
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 52169
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.122
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 58919
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.121
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 54505
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.121
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: -
+SourcePort: 54505
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.121
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.1
+SourceHostname: -
+SourcePort: 61853
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.252
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.121
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:69ac:c937:4d03:404f
+SourceHostname: -
+SourcePort: 61853
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:1:3
+DestinationHostname: -
+DestinationPort: 5355
+DestinationPortName: llmnr"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.120
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 55224
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:23","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:21.119
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.43.252
+SourceHostname: DESKTOP-U5F5T3L
+SourcePort: 60613
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.1
+DestinationHostname: -
+DestinationPort: 53
+DestinationPortName: domain"
+"24-08-2025 20:36:22","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:19.773
+ProcessGuid: {99ef7bdc-bd4a-68aa-844e-000000001f00}
+ProcessId: 34656
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: false
+SourceIsIpv6: true
+SourceIp: ff02:0:0:0:0:0:0:fb
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: fe80:0:0:0:e8b1:6981:4d49:cf21
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+"24-08-2025 20:36:22","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:19.438
+ProcessGuid: {99ef7bdc-bd4a-68aa-844e-000000001f00}
+ProcessId: 34656
+Image: C:\Program Files\Google\Chrome\Application\chrome.exe
+User: DESKTOP-U5F5T3L\DELL
+Protocol: udp
+Initiated: false
+SourceIsIpv6: false
+SourceIp: 224.0.0.251
+SourceHostname: mdns.mcast.net
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.111
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+"24-08-2025 20:36:21","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:19.773
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: false
+SourceIsIpv6: true
+SourceIp: ff02:0:0:0:0:0:0:fb
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: fe80:0:0:0:e8b1:6981:4d49:cf21
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+"24-08-2025 20:36:21","3","Information","Network connection detected:
+RuleName: -
+UtcTime: 2025-08-24 15:06:19.438
+ProcessGuid: {99ef7bdc-532b-6887-2e00-000000001f00}
+ProcessId: 2424
+Image: C:\Windows\system32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: false
+SourceIsIpv6: false
+SourceIp: 224.0.0.251
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.43.111
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+"24-08-2025 20:36:15","5","Information","Process terminated:
+RuleName: -
+UtcTime: 2025-08-24 15:06:15.666
+ProcessGuid: {99ef7bdc-2a65-68ab-115e-000000001f00}
+ProcessId: 40748
+Image: C:\Users\DELL\Desktop\insider-threat-detection\Sysmon\Sysmon64.exe
+User: DESKTOP-U5F5T3L\DELL"
+"24-08-2025 20:36:14","4","Information","Sysmon service state changed:
+UtcTime: 2025-08-24 15:06:14.867
+State: Started
+Version: 15.15
+SchemaVersion: 4.90"
+"24-08-2025 20:36:14","16","Information","Sysmon config state changed:
+UtcTime: 2025-08-24 15:06:14.439
+Configuration: C:\Users\DELL\Desktop\insider-threat-detection\Sysmon\sysmonconfig.xml
+ConfigurationFileHash: SHA256=C01775AFE9CE23FB4A64EE6D8DC91D2AB1FCCCE122F9F50A28DE4C3D64E99ADB"
